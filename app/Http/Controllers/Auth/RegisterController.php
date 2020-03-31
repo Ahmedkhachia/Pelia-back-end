@@ -83,6 +83,13 @@ class RegisterController extends Controller
                 // Auth::login($user);
                 // return response()->json('succès', 200);
                 // return Auth::user();
+                // $data = []; // Empty array
+        
+                // Mail::send('index', $data, function($msgg)
+                // {
+                //     $msgg->to('ahmedkhachia17@gmail.com', 'Pelia')->subject('Activation de votre compte Pelia');
+                // });  
+        
                 return $this->respondWithToken($token);
             }
         }
@@ -91,14 +98,8 @@ class RegisterController extends Controller
                 return $valida->errors()->toArray()['email'][0]; 
         } 
 
-        $data = []; // Empty array
+     
         
-        // Mail::send('index', $data, function($msgg)
-        // {
-        //     $msgg->to('ahmedkhachia17@gmail.com', 'Pelia')->subject('Activation de votre compte Pelia');
-        // });  
-
-        return $this->respondWithToken($token);
     }
          
     

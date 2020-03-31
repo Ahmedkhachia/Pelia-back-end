@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'mail.pelia.ma'),
+    'host' => env('MAIL_HOST', 'serveur90.heberjahiz.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 25),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'pelia@pelia.ma'),
+        'address' => env('MAIL_FROM_ADDRESS', 'contact@pelia.ma'),
         'name' => env('MAIL_FROM_NAME', 'pelia'),
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('pelia@pelia.ma'),
+    'username' => env('contact@pelia.ma'),
 
-    'password' => env('@tg,jQ@Oli33q3df'),
+    'password' => env('.]epsCE[uL_j'),
 
     /*
     |--------------------------------------------------------------------------
