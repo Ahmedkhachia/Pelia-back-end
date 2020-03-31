@@ -90,7 +90,7 @@ class RegisterController extends Controller
                 //     $msgg->to('ahmedkhachia17@gmail.com', 'Pelia')->subject('Activation de votre compte Pelia');
                 // });  
         
-                return $this->respondWithToken($token);
+               
             }
         }
         else
@@ -98,7 +98,7 @@ class RegisterController extends Controller
                 return $valida->errors()->toArray()['email'][0]; 
         } 
 
-     
+      return $this->respondWithToken($token);
         
     }
          
